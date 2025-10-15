@@ -30,6 +30,11 @@
       --card-bg: #2d2d2d;
     }
 
+    /* Hide sidebar-toggle on desktop, keep only sidebar-toggle-button */
+    .sidebar-toggle {
+      display: none !important;
+    }
+
     /* Desktop sidebar toggle button - styled like mobile */
     .sidebar-toggle-button {
       background: var(--theme-color) !important;
@@ -415,9 +420,14 @@
         display: block;
         /* Move to bottom left corner */
         top: auto;
-        bottom: 15px;
-        left: 15px;
+        bottom: 0px;
+        left: 0px;
         right: auto;
+      }
+
+      /* Mobile markdown section */
+      .markdown-section {
+        max-width: 95% !important;
       }
 
       /* Hide navbar completely on mobile */
@@ -468,8 +478,8 @@
       .theme-toggle {
         top: auto;
         left: auto;
-        bottom: 10px;
-        right: 10px;
+        bottom: 0px;
+        right: 0px;
         width: 40px;
         height: 40px;
         font-size: 16px;

@@ -125,11 +125,11 @@ curl http://localhost:8080/api/v1/auth/me \
 
 ## 📖 Next Steps
 
-- **[API Documentation](./API.md)** - Explore all available endpoints
-- **[Architecture Guide](./ARCHITECTURE.md)** - Understand the system design
-- **[Testing Guide](./TESTING.md)** - Run and write tests
-- **[Git Workflow](./GIT_WORKFLOW.md)** - Team development practices
-- **[Deployment Guide](./DEPLOY.md)** - Deploy to production
+- **[API Documentation](docs/API.md)** - Explore all available endpoints
+- **[Architecture Guide](docs/ARCHITECTURE.md)** - Understand the system design
+- **[Testing Guide](docs/TESTING.md)** - Run and write tests
+- **[Git Workflow](docs/GIT_WORKFLOW.md)** - Team development practices
+- **[Deployment Guide](docs/DEPLOY.md)** - Deploy to production
 
 ---
 
