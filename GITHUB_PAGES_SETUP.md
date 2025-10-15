@@ -2,23 +2,25 @@
 
 ## Шаг 1: Подготовка
 
-Весь сайт уже готов в папке `docs-site/`!
+Весь сайт уже готов в папке `docs/`!
 
 ```
-docs-site/
+docs/
 ├── index.html          # Главная страница Docsify
 ├── README.md           # Домашняя страница сайта
 ├── _sidebar.md         # Боковое меню
 ├── _navbar.md          # Верхнее меню
+├── .nojekyll           # Отключение Jekyll
 └── docs/               # Вся документация
     ├── API.md
     ├── ARCHITECTURE.md
     ├── TESTING.md
+    ├── WEBSITE.md      # Как работает сайт
     └── libraries/
         ├── GIN.md
         ├── GORM.md
         ├── JWT.md
-        └── ...
+        └── BCRYPT_VIPER.md
 ```
 
 ---
@@ -28,18 +30,9 @@ docs-site/
 ```bash
 cd /home/rodving/Документы/go/teach/08_advanced_api
 
-# Добавляем docs-site
-git add docs-site/
-git commit -m "feat: add GitHub Pages documentation site
-
-- Beautiful Docsify-based documentation site
-- Custom styling with gradients and cards
-- Tech stack icons from devicons
-- Full documentation integrated
-- Sidebar navigation
-- Search functionality
-- Syntax highlighting for Go, SQL, Bash
-- Mobile responsive design"
+# Добавляем docs
+git add docs/
+git commit -m "feat: add GitHub Pages documentation site"
 
 # Пушим на GitHub
 git push origin main
@@ -62,7 +55,7 @@ git push origin main
 
 4. В разделе **Source**:
    - **Branch**: выберите `main`
-   - **Folder**: выберите `/docs-site`
+   - **Folder**: выберите `/docs`
    - Нажмите **Save**
 
 5. Готово! Через 1-2 минуты сайт будет доступен по адресу:
@@ -116,15 +109,12 @@ https://alexrodving.github.io/advanced-user-api/
 При изменении документации:
 
 ```bash
-# Обновите docs-site/docs/
-# (они автоматически копируются из docs/)
-
-# Или скопируйте изменения:
-cp -r docs/* docs-site/docs/
+# Отредактируйте файлы в docs/docs/
+vim docs/docs/API.md
 
 # Коммит и пуш
-git add docs-site/
-git commit -m "docs: update documentation"
+git add docs/
+git commit -m "docs: update API documentation"
 git push origin main
 
 # GitHub Pages обновится автоматически через 1-2 минуты

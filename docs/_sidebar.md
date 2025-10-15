@@ -9,6 +9,7 @@
   - [Git Workflow](docs/GIT_WORKFLOW.md)
   - [Deployment](docs/DEPLOY.md)
   - [Summary](docs/PROJECT_SUMMARY.md)
+  - [Website](docs/WEBSITE.md)
 
 - **Библиотеки**
   - [Обзор](docs/libraries/README.md)

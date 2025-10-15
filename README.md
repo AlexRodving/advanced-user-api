@@ -18,21 +18,26 @@
 
 ## 📚 Документация
 
+> **💡 Совет:** Вся документация также доступна как [красивый веб-сайт](https://alexrodving.github.io/advanced-user-api/) с поиском и syntax highlighting!
+
 ### Основная документация
-- 📡 **[API Documentation](docs/API.md)** - Полное описание всех endpoints с примерами
-- ⚡ **[Quick Start](docs/QUICKSTART.md)** - Запуск за 3 команды
-- 🏗️ **[Architecture Guide](docs/ARCHITECTURE.md)** - Дизайн системы и структура кода
-- 🧪 **[Testing Guide](docs/TESTING.md)** - Unit и Integration тесты
-- 🌿 **[Git Workflow](docs/GIT_WORKFLOW.md)** - Работа с Git в команде (branches, PR, commits)
-- 🚀 **[Deployment Guide](docs/DEPLOY.md)** - Деплой в production (VPS, K8s, Heroku, AWS)
-- 📊 **[Project Summary](docs/PROJECT_SUMMARY.md)** - Статистика и технический обзор
+- 📡 **[API Documentation](docs/docs/API.md)** - Полное описание всех endpoints с примерами
+- ⚡ **[Quick Start](docs/docs/QUICKSTART.md)** - Запуск за 3 команды
+- 🏗️ **[Architecture Guide](docs/docs/ARCHITECTURE.md)** - Дизайн системы и структура кода
+- 🧪 **[Testing Guide](docs/docs/TESTING.md)** - Unit и Integration тесты
+- 🌿 **[Git Workflow](docs/docs/GIT_WORKFLOW.md)** - Работа с Git в команде (branches, PR, commits)
+- 🚀 **[Deployment Guide](docs/docs/DEPLOY.md)** - Деплой в production (VPS, K8s, Heroku, AWS)
+- 📊 **[Project Summary](docs/docs/PROJECT_SUMMARY.md)** - Статистика и технический обзор
 
 ### Библиотеки (детальная документация)
-- 📖 **[Libraries Overview](docs/libraries/)** - Обзор всех библиотек
-- 🍸 **[Gin Framework](docs/libraries/GIN.md)** - HTTP router, handlers, middleware
-- 🗄️ **[GORM ORM](docs/libraries/GORM.md)** - Database operations, models, migrations
-- 🔐 **[JWT](docs/libraries/JWT.md)** - Token generation and validation
-- 🔒 **[Bcrypt & Viper](docs/libraries/BCRYPT_VIPER.md)** - Password hashing & configuration
+- 📖 **[Libraries Overview](docs/docs/libraries/)** - Обзор всех библиотек
+- 🍸 **[Gin Framework](docs/docs/libraries/GIN.md)** - HTTP router, handlers, middleware
+- 🗄️ **[GORM ORM](docs/docs/libraries/GORM.md)** - Database operations, models, migrations
+- 🔐 **[JWT](docs/docs/libraries/JWT.md)** - Token generation and validation
+- 🔒 **[Bcrypt & Viper](docs/docs/libraries/BCRYPT_VIPER.md)** - Password hashing & configuration
+
+### Веб-сайт документации
+- 🌐 **[Documentation Website Guide](docs/docs/WEBSITE.md)** - Как работает сайт документации (Docsify, CSS, GitHub Pages)
 
 ---
 
@@ -102,20 +107,27 @@ advanced-user-api/
 │   └── integration/
 │       └── api_test.go             # Integration тесты
 │
-├── docs/
-│   ├── API.md                      # 📡 API документация
-│   ├── ARCHITECTURE.md             # 🏗️ Архитектура
-│   ├── TESTING.md                  # 🧪 Тестирование
-│   ├── GIT_WORKFLOW.md             # 🌿 Git workflow
-│   ├── QUICKSTART.md               # ⚡ Быстрый старт
-│   ├── DEPLOY.md                   # 🚀 Гайд по деплою
-│   ├── PROJECT_SUMMARY.md          # 📊 Сводка проекта
-│   └── libraries/                  # 📚 Детальная документация библиотек
-│       ├── README.md               # Обзор всех библиотек
-│       ├── GIN.md                  # Gin framework (16 методов)
-│       ├── GORM.md                 # GORM ORM (CRUD, migrations)
-│       ├── JWT.md                  # JWT tokens (auth)
-│       └── BCRYPT_VIPER.md         # Bcrypt & Viper
+├── docs/                           # 🌐 GitHub Pages сайт документации
+│   ├── index.html                  # Docsify + Custom CSS
+│   ├── README.md                   # Главная страница сайта
+│   ├── _sidebar.md                 # Боковое меню
+│   ├── _navbar.md                  # Верхнее меню
+│   ├── .nojekyll                   # Отключение Jekyll
+│   └── docs/                       # Markdown документация
+│       ├── API.md                  # 📡 API endpoints
+│       ├── ARCHITECTURE.md         # 🏗️ Архитектура
+│       ├── TESTING.md              # 🧪 Тестирование
+│       ├── GIT_WORKFLOW.md         # 🌿 Git workflow
+│       ├── QUICKSTART.md           # ⚡ Быстрый старт
+│       ├── DEPLOY.md               # 🚀 Деплой
+│       ├── PROJECT_SUMMARY.md      # 📊 Сводка
+│       ├── WEBSITE.md              # 🌐 Как работает сайт
+│       └── libraries/              # 📚 Документация библиотек
+│           ├── README.md           # Обзор
+│           ├── GIN.md              # Gin (16 методов)
+│           ├── GORM.md             # GORM ORM
+│           ├── JWT.md              # JWT auth
+│           └── BCRYPT_VIPER.md     # Bcrypt & Viper
 │
 ├── .github/
 │   └── workflows/
