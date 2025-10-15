@@ -28,7 +28,8 @@ docs/
 ## Шаг 2: Пуш на GitHub
 
 ```bash
-cd /home/rodving/Документы/go/teach/08_advanced_api
+# Перейдите в директорию проекта
+cd advanced-user-api
 
 # Добавляем docs
 git add docs/
