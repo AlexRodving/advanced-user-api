@@ -42,10 +42,7 @@
     }
 
     /* Style sidebar-toggle on desktop like mobile button */
-    .sidebar-toggle,
-    button.sidebar-toggle,
-    .sidebar-toggle-button,
-    button.sidebar-toggle-button {
+    .sidebar-toggle {
       background: var(--theme-color) !important;
       border: 2px solid var(--theme-color) !important;
       border-radius: 12px !important;
@@ -62,21 +59,35 @@
       outline: none !important;
     }
 
-    .sidebar-toggle:hover,
-    button.sidebar-toggle:hover,
-    .sidebar-toggle-button:hover,
-    button.sidebar-toggle-button:hover {
+    .sidebar-toggle:hover {
       background: var(--theme-color-dark) !important;
       border-color: var(--theme-color-dark) !important;
       transform: scale(1.05) !important;
       box-shadow: 0 6px 16px rgba(0, 173, 216, 0.4) !important;
     }
 
-    .sidebar-toggle:active,
-    button.sidebar-toggle:active,
-    .sidebar-toggle-button:active,
-    button.sidebar-toggle-button:active {
+    .sidebar-toggle:active {
       transform: scale(0.95) !important;
+    }
+
+    /* Style the inner div to match mobile button */
+    .sidebar-toggle .sidebar-toggle-button {
+      background: transparent !important;
+      border: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    /* Style hamburger spans */
+    .sidebar-toggle .sidebar-toggle-button span {
+      background: white !important;
+      height: 2px !important;
+      width: 20px !important;
+      display: block !important;
+      margin: 3px 0 !important;
+      border-radius: 1px !important;
     }
 
     /* Theme toggle button - styled like mobile menu button */
@@ -250,8 +261,20 @@
 
     /* Sidebar */
     .sidebar {
-      background: #f8f9fa;
+      background: #f8f9fa !important;
       border-right: 1px solid #e1e4e8;
+    }
+
+    /* Fix sidebar sections to have consistent background */
+    .sidebar-nav,
+    .sidebar-nav ul,
+    .sidebar-nav li {
+      background: transparent !important;
+    }
+
+    /* Ensure all sidebar content has same background */
+    .sidebar * {
+      background: transparent !important;
     }
 
     .sidebar-nav li {
@@ -342,8 +365,19 @@
     }
 
     [data-theme="dark"] .sidebar {
-      background: var(--card-bg);
+      background: var(--card-bg) !important;
       border-color: var(--border-color);
+    }
+
+    /* Fix dark theme sidebar sections */
+    [data-theme="dark"] .sidebar-nav,
+    [data-theme="dark"] .sidebar-nav ul,
+    [data-theme="dark"] .sidebar-nav li {
+      background: transparent !important;
+    }
+
+    [data-theme="dark"] .sidebar * {
+      background: transparent !important;
     }
 
     /* Dark theme sidebar improvements */
