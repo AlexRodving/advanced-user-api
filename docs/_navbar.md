@@ -1,4 +1,4 @@
-- [🏠 Главная](/)
+ - [🏠 Главная](/)
 - [📡 API](docs/API.md)
 - [🏗️ Архитектура](docs/ARCHITECTURE.md)
 - [📚 Библиотеки](docs/libraries/README.md)
