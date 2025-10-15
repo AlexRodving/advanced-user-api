@@ -10,6 +10,7 @@
 
 ## 📚 Документация
 
+### Основная документация
 - 📡 **[API Documentation](docs/API.md)** - Полное описание всех endpoints с примерами
 - ⚡ **[Quick Start](docs/QUICKSTART.md)** - Запуск за 3 команды
 - 🏗️ **[Architecture Guide](docs/ARCHITECTURE.md)** - Дизайн системы и структура кода
@@ -17,6 +18,13 @@
 - 🌿 **[Git Workflow](docs/GIT_WORKFLOW.md)** - Работа с Git в команде (branches, PR, commits)
 - 🚀 **[Deployment Guide](docs/DEPLOY.md)** - Деплой в production (VPS, K8s, Heroku, AWS)
 - 📊 **[Project Summary](docs/PROJECT_SUMMARY.md)** - Статистика и технический обзор
+
+### Библиотеки (детальная документация)
+- 📖 **[Libraries Overview](docs/libraries/)** - Обзор всех библиотек
+- 🍸 **[Gin Framework](docs/libraries/GIN.md)** - HTTP router, handlers, middleware
+- 🗄️ **[GORM ORM](docs/libraries/GORM.md)** - Database operations, models, migrations
+- 🔐 **[JWT](docs/libraries/JWT.md)** - Token generation and validation
+- 🔒 **[Bcrypt & Viper](docs/libraries/BCRYPT_VIPER.md)** - Password hashing & configuration
 
 ---
 
@@ -93,7 +101,13 @@ advanced-user-api/
 │   ├── GIT_WORKFLOW.md             # 🌿 Git workflow
 │   ├── QUICKSTART.md               # ⚡ Быстрый старт
 │   ├── DEPLOY.md                   # 🚀 Гайд по деплою
-│   └── PROJECT_SUMMARY.md          # 📊 Сводка проекта
+│   ├── PROJECT_SUMMARY.md          # 📊 Сводка проекта
+│   └── libraries/                  # 📚 Детальная документация библиотек
+│       ├── README.md               # Обзор всех библиотек
+│       ├── GIN.md                  # Gin framework (16 методов)
+│       ├── GORM.md                 # GORM ORM (CRUD, migrations)
+│       ├── JWT.md                  # JWT tokens (auth)
+│       └── BCRYPT_VIPER.md         # Bcrypt & Viper
 │
 ├── .github/
 │   └── workflows/
