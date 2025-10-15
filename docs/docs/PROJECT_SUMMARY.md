@@ -289,7 +289,8 @@ This project follows standard Go best practices and welcomes contributions that 
 ## 📞 Contact
 
 **Developer**: Alex Rodving  
-**Repository**: [github.com/AlexRodving/advanced-user-api](https://github.com/AlexRodving/advanced-user-api)
+**Repository**: [github.com/AlexRodving/advanced-user-api](https://github.com/AlexRodving/advanced-user-api)  
+**Telegram**: [@Rodving](https://t.me/Rodving)
 
 ---
 
