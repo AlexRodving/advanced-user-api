@@ -14,6 +14,7 @@
 - ⚡ **[Quick Start](docs/QUICKSTART.md)** - Запуск за 3 команды
 - 🏗️ **[Architecture Guide](docs/ARCHITECTURE.md)** - Дизайн системы и структура кода
 - 🧪 **[Testing Guide](docs/TESTING.md)** - Unit и Integration тесты
+- 🌿 **[Git Workflow](docs/GIT_WORKFLOW.md)** - Работа с Git в команде (branches, PR, commits)
 - 🚀 **[Deployment Guide](docs/DEPLOY.md)** - Деплой в production (VPS, K8s, Heroku, AWS)
 - 📊 **[Project Summary](docs/PROJECT_SUMMARY.md)** - Статистика и технический обзор
 
@@ -89,6 +90,7 @@ advanced-user-api/
 │   ├── API.md                      # 📡 API документация
 │   ├── ARCHITECTURE.md             # 🏗️ Архитектура
 │   ├── TESTING.md                  # 🧪 Тестирование
+│   ├── GIT_WORKFLOW.md             # 🌿 Git workflow
 │   ├── QUICKSTART.md               # ⚡ Быстрый старт
 │   ├── DEPLOY.md                   # 🚀 Гайд по деплою
 │   └── PROJECT_SUMMARY.md          # 📊 Сводка проекта
@@ -387,11 +389,15 @@ authorized.Use(middleware.AuthMiddleware())
 - ✅ Docker контейнеры
 - ✅ CI/CD pipeline
 - ✅ Swagger документация
-- ✅ **Идеальное портфолио для работы!**
+- ✅ **Production-ready код для портфолио**
 
 ---
 
-**Начинаем строить?** 💪
+## 📖 Additional Resources
 
-Я буду давать задания по шагам, а вы реализовывать. Договорились?
+- [Git Workflow Guide](docs/GIT_WORKFLOW.md) - Работа с Git в команде
+- [Go Best Practices](https://go.dev/doc/effective_go)
+- [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+
+---
 
