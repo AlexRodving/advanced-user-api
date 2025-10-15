@@ -123,27 +123,13 @@ curl http://localhost:8080/api/v1/auth/me \
 
 ---
 
-## 🎓 Для обучения
+## 📖 Next Steps
 
-Этот проект идеален для изучения:
-- Go веб-разработки
-- JWT аутентификации
-- GORM ORM
-- Docker контейнеризации
-- Clean Architecture
-
-**Каждый файл содержит подробные комментарии!** 📚
+- **[API Documentation](./API.md)** - Explore all available endpoints
+- **[Architecture Guide](./ARCHITECTURE.md)** - Understand the system design
+- **[Testing Guide](./TESTING.md)** - Run and write tests
+- **[Git Workflow](./GIT_WORKFLOW.md)** - Team development practices
+- **[Deployment Guide](./DEPLOY.md)** - Deploy to production
 
 ---
-
-## 💼 Для портфолио
-
-- Production-ready код
-- Современный стек технологий
-- Best practices
-- Готов к деплою
-
----
-
-**Приятного изучения!** 🚀
 
