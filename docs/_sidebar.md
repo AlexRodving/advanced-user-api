@@ -1,29 +1,29 @@
 - **Начало**
   - [Главная](/)
-  - [Quick Start](docs/QUICKSTART.md)
+  - [Quick Start](QUICKSTART.md)
 
 - **Документация**
-  - [API](docs/API.md)
-  - [Architecture](docs/ARCHITECTURE.md)
-  - [Testing](docs/TESTING.md)
-  - [Git Workflow](docs/GIT_WORKFLOW.md)
-  - [Docker & Docker Compose](docs/DOCKER.md)
-  - [GitHub Actions CI/CD](docs/GITHUB_ACTIONS.md)
-  - [Redis & Monitoring](docs/REDIS_MONITORING.md)
-  - [Deployment](docs/DEPLOY.md)
-  - [Summary](docs/PROJECT_SUMMARY.md)
-  - [Website](docs/WEBSITE.md)
-  - [GitHub Pages Setup](docs/GITHUB_PAGES_SETUP.md)
+  - [API](API.md)
+  - [Architecture](ARCHITECTURE.md)
+  - [Testing](TESTING.md)
+  - [Git Workflow](GIT_WORKFLOW.md)
+  - [Docker & Docker Compose](DOCKER.md)
+  - [GitHub Actions CI/CD](GITHUB_ACTIONS.md)
+  - [Redis & Monitoring](REDIS_MONITORING.md)
+  - [Deployment](DEPLOY.md)
+  - [Summary](PROJECT_SUMMARY.md)
+  - [Website](WEBSITE.md)
+  - [GitHub Pages Setup](GITHUB_PAGES_SETUP.md)
 
 - **Расширения**
-  - [Блог Платформа](docs/EXTEND_TO_BLOG.md)
+  - [Блог Платформа](EXTEND_TO_BLOG.md)
 
 - **Библиотеки**
-  - [Обзор](docs/libraries/README.md)
-  - [Gin](docs/libraries/GIN.md)
-  - [GORM](docs/libraries/GORM.md)
-  - [JWT](docs/libraries/JWT.md)
-  - [Bcrypt & Viper](docs/libraries/BCRYPT_VIPER.md)
+  - [Обзор](libraries/README.md)
+  - [Gin](libraries/GIN.md)
+  - [GORM](libraries/GORM.md)
+  - [JWT](libraries/JWT.md)
+  - [Bcrypt & Viper](libraries/BCRYPT_VIPER.md)
 
 - **Ссылки**
   - [GitHub](https://github.com/AlexRodving/advanced-user-api)
