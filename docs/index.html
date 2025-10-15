@@ -85,8 +85,8 @@
     /* Theme toggle button - styled like mobile menu button */
     .theme-toggle {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: 0;
+      right: 0;
       z-index: 1000;
       background: var(--theme-color);
       border: 2px solid var(--theme-color);
@@ -122,8 +122,8 @@
     .mobile-menu-toggle {
       display: none;
       position: fixed;
-      top: 20px;
-      left: 20px;
+      top: 0;
+      left: 0;
       z-index: 1000;
       background: var(--theme-color);
       border: 2px solid var(--theme-color);
@@ -436,14 +436,10 @@
     /* Mobile responsive */
     @media (max-width: 768px) {
       .mobile-menu-toggle {
-        display: block;
-        /* Move to bottom left corner - pinned to edge */
-        top: auto;
-        bottom: 0px;
-        left: 0px;
-        right: auto;
-        margin: 0;
-        border-radius: 0 12px 0 0;
+        display: block !important;
+        /* Pinned to bottom left corner */
+        top: 0;
+        left: 0;
       }
 
       /* Mobile markdown section */
@@ -497,15 +493,11 @@
 
       /* Theme toggle in bottom right corner on mobile */
       .theme-toggle {
-        top: auto;
-        left: auto;
-        bottom: 0px;
-        right: 0px;
+        bottom: 0;
+        right: 0;
         width: 40px;
         height: 40px;
         font-size: 16px;
-        margin: 0;
-        border-radius: 12px 0 0 0;
       }
 
       /* Fix content shift on mobile */
