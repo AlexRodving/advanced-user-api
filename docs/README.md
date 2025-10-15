@@ -1,5 +1,3 @@
-# Advanced User Management API
-
 <div class="hero">
   <h1>🚀 Advanced User API</h1>
   <p>Production-ready REST API с JWT аутентификацией</p>
@@ -11,6 +9,8 @@
     <img src="https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white" alt="Docker">
   </div>
 </div>
+
+# Advanced User Management API
 
 ## 🎯 О проекте
 

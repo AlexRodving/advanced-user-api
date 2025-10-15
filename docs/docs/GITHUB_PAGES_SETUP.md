@@ -32,10 +32,10 @@
 cd advanced-user-api
 
 # Добавьте remote (SSH - рекомендуется)
-git remote add origin git@github.com:AlexRodving/advanced-user-api.git
+git remote add origin git@github.com:UserName/advanced-user-api.git
 
 # Или HTTPS (если нет SSH ключа)
-git remote add origin https://github.com/AlexRodving/advanced-user-api.git
+git remote add origin https://github.com/UserName/advanced-user-api.git
 
 # Запуште код
 git push -u origin main
@@ -51,7 +51,7 @@ git push -u origin main
 
 1. Откройте ваш репозиторий на GitHub:
    ```
-   https://github.com/AlexRodving/advanced-user-api
+   https://github.com/UserName/advanced-user-api
    ```
 
 2. Перейдите в **Settings** → **Pages** (в левом меню)
@@ -130,7 +130,7 @@ git push origin main
 
 ### Изменить цветовую тему
 
-Отредактируйте `docs-site/index.html`:
+Отредактируйте `docs/index.html`:
 
 ```css
 :root {
@@ -150,7 +150,7 @@ git push origin main
 
 ### Добавить Google Analytics
 
-Добавьте в `docs-site/index.html` перед `</head>`:
+Добавьте в `docs/index.html` перед `</head>`:
 
 ```html
 <!-- Google Analytics -->
@@ -169,8 +169,8 @@ git push origin main
 
 ### Сайт не появляется
 
-1. Проверьте что `docs-site/` папка в main ветке
-2. Проверьте Settings → Pages → Source = `main` branch, `/docs-site` folder
+1. Проверьте что `docs/` папка в main ветке
+2. Проверьте Settings → Pages → Source = `main` branch, `/docs` folder
 3. Подождите 5-10 минут (первая публикация может занять время)
 
 ### 404 ошибки на страницах
@@ -186,7 +186,7 @@ git push origin main
 
 ### Стили не применяются
 
-Проверьте что `index.html` в корне `docs-site/`
+Проверьте что `index.html` в корне `docs/`
 
 ---
 

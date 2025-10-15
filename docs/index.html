@@ -16,16 +16,80 @@
       --theme-color: #00ADD8;
       --theme-color-dark: #007d9c;
       --sidebar-width: 280px;
+      --bg-color: #ffffff;
+      --text-color: #333333;
+      --border-color: #e1e4e8;
+      --card-bg: #f8f9fa;
     }
 
-    /* Hero Section */
+    /* Dark theme variables */
+    [data-theme="dark"] {
+      --bg-color: #1a1a1a;
+      --text-color: #ffffff;
+      --border-color: #333333;
+      --card-bg: #2d2d2d;
+    }
+
+    /* Theme toggle button */
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: var(--bg-color);
+      border: 2px solid var(--border-color);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      transition: all 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.1);
+    }
+
+    /* Mobile menu button */
+    .mobile-menu-toggle {
+      display: none;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      background: var(--bg-color);
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: all 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .mobile-menu-toggle:hover {
+      background: var(--theme-color);
+      color: white;
+    }
+
+    /* Fix header overlapping */
+    .app-name {
+      margin-top: 20px !important;
+      padding-top: 20px !important;
+    }
+
+    /* Hero Section - fix margins */
     .hero {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
-      padding: 60px 20px;
+      padding: 40px 20px;
       text-align: center;
-      margin: -40px -40px 40px -40px;
-      border-radius: 0 0 20px 20px;
+      margin: 20px 0 40px 0;
+      border-radius: 12px;
     }
 
     .hero h1 {
@@ -179,8 +243,56 @@
       margin-top: 5px;
     }
 
-    /* Responsive */
+    /* Dark theme styles */
+    [data-theme="dark"] body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    [data-theme="dark"] .sidebar {
+      background: var(--card-bg);
+      border-color: var(--border-color);
+    }
+
+    [data-theme="dark"] .feature-card {
+      background: var(--card-bg);
+      color: var(--text-color);
+    }
+
+    [data-theme="dark"] .stat-item {
+      background: var(--card-bg);
+      color: var(--text-color);
+    }
+
+    [data-theme="dark"] pre {
+      background: #2d2d2d;
+      color: #ffffff;
+    }
+
+    [data-theme="dark"] code {
+      background: #2d2d2d;
+      color: #ffffff;
+    }
+
+    /* Mobile responsive */
     @media (max-width: 768px) {
+      .mobile-menu-toggle {
+        display: block;
+      }
+
+      .theme-toggle {
+        top: 20px;
+        right: 80px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+      }
+
+      .hero {
+        margin: 10px 0 20px 0;
+        padding: 30px 15px;
+      }
+
       .hero h1 {
         font-size: 2em;
       }
@@ -193,11 +305,178 @@
         width: 40px;
         height: 40px;
       }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .stats {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .stat-item {
+        min-width: auto;
+      }
+    }
+
+    /* Sidebar mobile improvements */
+    @media (max-width: 768px) {
+      .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 999;
+        width: 280px;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+      }
+
+      .sidebar.open {
+        transform: translateX(0);
+      }
+
+      .sidebar::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none;
+      }
+
+      .sidebar.open::before {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      /* Mobile menu button improvements */
+      .mobile-menu-toggle {
+        background: var(--theme-color);
+        color: white;
+        border: none;
+        font-weight: bold;
+      }
+
+      .mobile-menu-toggle:hover {
+        background: var(--theme-color-dark);
+        transform: scale(1.05);
+      }
+
+      /* Better mobile content spacing */
+      .content {
+        padding-top: 80px;
+      }
+    }
+
+    /* Additional mobile improvements */
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 1.8em;
+      }
+
+      .hero p {
+        font-size: 1.1em;
+      }
+
+      .hero-badges img {
+        margin: 3px;
+        max-width: 120px;
+      }
+
+      .theme-toggle {
+        top: 15px;
+        right: 70px;
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+      }
+
+      .mobile-menu-toggle {
+        top: 15px;
+        left: 15px;
+        padding: 8px;
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
+  <!-- Mobile menu toggle -->
+  <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" title="Меню">
+    ☰
+  </button>
+
+  <!-- Theme toggle -->
+  <button class="theme-toggle" onclick="toggleTheme()" title="Переключить тему">
+    🌙
+  </button>
+
   <div id="app">Загрузка...</div>
+  
+  <script>
+    // Theme management
+    function initTheme() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      updateThemeIcon(savedTheme);
+    }
+
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    }
+
+    function updateThemeIcon(theme) {
+      const icon = document.querySelector('.theme-toggle');
+      icon.textContent = theme === 'light' ? '🌙' : '☀️';
+    }
+
+    // Mobile menu management
+    function toggleMobileMenu() {
+      const sidebar = document.querySelector('.sidebar');
+      if (sidebar) {
+        sidebar.classList.toggle('open');
+      }
+    }
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const sidebar = document.querySelector('.sidebar');
+      const menuToggle = document.querySelector('.mobile-menu-toggle');
+      
+      if (sidebar && menuToggle && 
+          !sidebar.contains(event.target) && 
+          !menuToggle.contains(event.target)) {
+        sidebar.classList.remove('open');
+      }
+    });
+
+    // Close mobile menu when clicking on a link
+    document.addEventListener('click', function(event) {
+      if (event.target.tagName === 'A' && event.target.closest('.sidebar')) {
+        const sidebar = document.querySelector('.sidebar');
+        if (sidebar) {
+          sidebar.classList.remove('open');
+        }
+      }
+    });
+
+    // Initialize theme on page load
+    document.addEventListener('DOMContentLoaded', initTheme);
+  </script>
   
   <script>
     window.$docsify = {
