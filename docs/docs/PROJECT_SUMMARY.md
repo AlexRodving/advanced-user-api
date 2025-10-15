@@ -1,151 +1,151 @@
-# 📊 Project Summary
+# 📊 Сводка проекта
 
-## Overview
+## Обзор
 
-**Advanced User Management API** - production-ready REST API with JWT authentication, built with modern Go technologies and best practices.
+**Advanced User Management API** - готовый к продакшену REST API с JWT аутентификацией, построенный на современных технологиях Go с использованием лучших практик.
 
-**Repository:** [github.com/AlexRodving/advanced-user-api](https://github.com/AlexRodving/advanced-user-api)
+**Репозиторий:** [github.com/AlexRodving/advanced-user-api](https://github.com/AlexRodving/advanced-user-api)
 
 ---
 
-## 🎯 Key Features
+## 🎯 Ключевые возможности
 
-### Core Functionality
-- ✅ JWT-based authentication (register, login, protected routes)
-- ✅ Complete user CRUD operations
-- ✅ Bcrypt password hashing
-- ✅ Input validation with Gin binding tags
-- ✅ Comprehensive error handling
-- ✅ Graceful shutdown
+### Основная функциональность
+- ✅ JWT аутентификация (регистрация, вход, защищенные маршруты)
+- ✅ Полные CRUD операции с пользователями
+- ✅ Bcrypt хеширование паролей
+- ✅ Валидация входных данных с Gin binding тегами
+- ✅ Комплексная обработка ошибок
+- ✅ Корректное завершение работы
 
-### Architecture
+### Архитектура
 - ✅ Clean Architecture (Handler → Service → Repository)
-- ✅ Dependency Injection pattern
-- ✅ Interface-based design
-- ✅ Modular package structure
+- ✅ Паттерн Dependency Injection
+- ✅ Интерфейсно-ориентированный дизайн
+- ✅ Модульная структура пакетов
 
-### Database
-- ✅ PostgreSQL with GORM ORM
-- ✅ Auto migrations
-- ✅ Soft delete support
-- ✅ Database indexes for performance
+### База данных
+- ✅ PostgreSQL с GORM ORM
+- ✅ Автоматические миграции
+- ✅ Поддержка мягкого удаления
+- ✅ Индексы базы данных для производительности
 
-### Infrastructure
-- ✅ Docker multi-stage build (15MB image)
+### Инфраструктура
+- ✅ Docker многоэтапная сборка (образ 15MB)
 - ✅ Docker Compose (API + PostgreSQL + Redis + pgAdmin)
-- ✅ GitHub Actions CI/CD pipeline
-- ✅ Automated testing and security scanning
+- ✅ GitHub Actions CI/CD пайплайн
+- ✅ Автоматическое тестирование и сканирование безопасности
 
-### Testing
-- ✅ Unit tests with mocks (testify)
-- ✅ Integration tests with real database
-- ✅ Code coverage reporting
+### Тестирование
+- ✅ Unit тесты с моками (testify)
+- ✅ Integration тесты с реальной базой данных
+- ✅ Отчеты о покрытии кода
 
-### Documentation
-- ✅ Complete API documentation
-- ✅ Architecture guide
-- ✅ Testing guide
-- ✅ Deployment guide
-- ✅ Inline code comments (50%+)
-
----
-
-## 🛠️ Technology Stack
-
-| Category | Technology | Version | Purpose |
-|----------|-----------|---------|---------|
-| **Language** | Go | 1.25 | Backend language |
-| **Framework** | Gin | 1.11 | HTTP web framework |
-| **ORM** | GORM | 1.25 | Database ORM |
-| **Database** | PostgreSQL | 15 | Primary database |
-| **Cache** | Redis | 7 | Caching layer |
-| **Auth** | JWT | 5.3 | Token-based auth |
-| **Config** | Viper | 1.21 | Configuration management |
-| **Logging** | Zap | 1.26 | Structured logging |
-| **Validation** | Go Playground Validator | 10.16 | Request validation |
-| **Testing** | Testify | 1.8 | Testing framework |
-| **Containerization** | Docker | - | Container platform |
-| **CI/CD** | GitHub Actions | - | Automation pipeline |
+### Документация
+- ✅ Полная документация API
+- ✅ Руководство по архитектуре
+- ✅ Руководство по тестированию
+- ✅ Руководство по развертыванию
+- ✅ Встроенные комментарии к коду (50%+)
 
 ---
 
-## 📈 Project Statistics
+## 🛠️ Технологический стек
 
-### Code Metrics
-- **Total Files**: 30+
-- **Go Source Files**: 13
-- **Lines of Code**: ~2,300
-- **Test Files**: 2
-- **Documentation Files**: 6
-- **Code Comments**: 50%+
+| Категория | Технология | Версия | Назначение |
+|-----------|------------|--------|------------|
+| **Язык** | Go | 1.25 | Backend язык |
+| **Фреймворк** | Gin | 1.11 | HTTP веб-фреймворк |
+| **ORM** | GORM | 1.25 | ORM для базы данных |
+| **База данных** | PostgreSQL | 15 | Основная база данных |
+| **Кэш** | Redis | 7 | Слой кэширования |
+| **Аутентификация** | JWT | 5.3 | Токенная аутентификация |
+| **Конфигурация** | Viper | 1.21 | Управление конфигурацией |
+| **Логирование** | Zap | 1.26 | Структурированное логирование |
+| **Валидация** | Go Playground Validator | 10.16 | Валидация запросов |
+| **Тестирование** | Testify | 1.8 | Фреймворк тестирования |
+| **Контейнеризация** | Docker | - | Платформа контейнеров |
+| **CI/CD** | GitHub Actions | - | Пайплайн автоматизации |
+
+---
+
+## 📈 Статистика проекта
+
+### Метрики кода
+- **Всего файлов**: 30+
+- **Go исходных файлов**: 13
+- **Строк кода**: ~2,300
+- **Тестовых файлов**: 2
+- **Документации**: 6 файлов
+- **Комментариев в коде**: 50%+
 
 ### API Endpoints
-- **Public Endpoints**: 3 (register, login, health)
-- **Protected Endpoints**: 5 (user CRUD, profile)
-- **Total Endpoints**: 8
+- **Публичные endpoints**: 3 (регистрация, вход, health)
+- **Защищенные endpoints**: 5 (CRUD пользователей, профиль)
+- **Всего endpoints**: 8
 
-### Git History
-- **Commits**: 7
-- **Branches**: main
-- **Contributors**: 1
+### История Git
+- **Коммитов**: 7
+- **Веток**: main
+- **Контрибьюторов**: 1
 
 ---
 
-## 📂 Project Structure
+## 📂 Структура проекта
 
 ```
 advanced-user-api/
-├── cmd/api/              # Application entry point
+├── cmd/api/              # Точка входа приложения
 ├── internal/
-│   ├── config/          # Configuration management
-│   ├── domain/          # Domain models & DTOs
-│   ├── handler/         # HTTP handlers (Presentation layer)
-│   ├── service/         # Business logic layer
-│   ├── repository/      # Data access layer
+│   ├── config/          # Управление конфигурацией
+│   ├── domain/          # Доменные модели и DTO
+│   ├── handler/         # HTTP обработчики (Слой представления)
+│   ├── service/         # Слой бизнес-логики
+│   ├── repository/      # Слой доступа к данным
 │   ├── middleware/      # HTTP middleware (auth, cors, logger)
-│   └── pkg/             # Shared utilities (jwt, password, validator)
+│   └── pkg/             # Общие утилиты (jwt, password, validator)
 ├── tests/
-│   ├── unit/            # Unit tests with mocks
-│   └── integration/     # Integration tests
-├── docs/                # Documentation
-├── docker/              # Docker configuration
-├── .github/workflows/   # CI/CD pipelines
-└── migrations/          # Database migrations
+│   ├── unit/            # Unit тесты с моками
+│   └── integration/     # Integration тесты
+├── docs/                # Документация
+├── docker/              # Конфигурация Docker
+├── .github/workflows/   # CI/CD пайплайны
+└── migrations/          # Миграции базы данных
 ```
 
 ---
 
-## 🔐 Security Features
+## 🔐 Функции безопасности
 
-- **Password Hashing**: Bcrypt with salt
-- **JWT Tokens**: HS256 algorithm, 24h expiration
-- **CORS**: Configurable cross-origin policies
-- **Input Validation**: Server-side validation for all inputs
-- **SQL Injection Protection**: GORM parameterized queries
-- **Dependency Scanning**: Automated security checks in CI
+- **Хеширование паролей**: Bcrypt с солью
+- **JWT токены**: Алгоритм HS256, срок действия 24ч
+- **CORS**: Настраиваемые политики cross-origin
+- **Валидация входных данных**: Серверная валидация всех входных данных
+- **Защита от SQL инъекций**: Параметризованные запросы GORM
+- **Сканирование зависимостей**: Автоматические проверки безопасности в CI
 
 ---
 
-## 🧪 Quality Assurance
+## 🧪 Контроль качества
 
-### Testing
-- **Unit Tests**: Business logic tested with mocks
-- **Integration Tests**: Full API flow testing
-- **Coverage**: Reported in CI pipeline
+### Тестирование
+- **Unit тесты**: Бизнес-логика тестируется с моками
+- **Integration тесты**: Полное тестирование API flow
+- **Покрытие**: Отчеты в CI пайплайне
 
-### CI/CD Pipeline
-- ✅ Automated tests on every push
-- ✅ Docker image build and validation
-- ✅ Security vulnerability scanning (Trivy)
-- ✅ Code linting and formatting checks
-- ✅ Coverage reporting (Codecov)
+### CI/CD Пайплайн
+- ✅ Автоматические тесты при каждом push
+- ✅ Сборка и валидация Docker образа
+- ✅ Сканирование уязвимостей безопасности (Trivy)
+- ✅ Проверки линтинга и форматирования кода
+- ✅ Отчеты о покрытии (Codecov)
 
-### Code Quality
-- ✅ Go fmt compliance
-- ✅ Go vet analysis
-- ✅ Race condition detection
-- ✅ Consistent code style
-- ✅ Comprehensive inline documentation
+### Качество кода
+- ✅ Соответствие Go fmt
+- ✅ Анализ Go vet
+- ✅ Обнаружение race conditions
+- ✅ Консистентный стиль кода
+- ✅ Комплексная встроенная документация
 
 ---
 
