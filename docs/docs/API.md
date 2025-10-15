@@ -427,7 +427,7 @@ curl http://localhost:8080/api/v1/auth/me \
 ```
 
 ### cURL Examples
-Полные примеры в [`docs/QUICKSTART.md`](./QUICKSTART.md)
+Полные примеры в [`docs/QUICKSTART.md`](docs/QUICKSTART.md)
 
 ---
 
@@ -449,7 +449,7 @@ openssl rand -base64 32
 
 ## 📖 Дополнительная документация
 
-- [Quick Start](./QUICKSTART.md) - Быстрый старт
-- [Deployment](./DEPLOY.md) - Деплой в production
-- [Project Summary](./PROJECT_SUMMARY.md) - Сводка проекта
+- [Quick Start](docs/QUICKSTART.md) - Быстрый старт
+- [Deployment](docs/DEPLOY.md) - Деплой в production
+- [Project Summary](docs/PROJECT_SUMMARY.md) - Сводка проекта
 
