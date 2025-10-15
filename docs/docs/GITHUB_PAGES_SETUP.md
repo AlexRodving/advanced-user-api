@@ -1,72 +1,75 @@
-# 🌐 Настройка GitHub Pages
+# 🌐 GitHub Setup & Pages
 
-## Шаг 1: Подготовка
+## 📋 Шаг 1: Создайте репозиторий на GitHub
 
-Весь сайт уже готов в папке `docs/`!
+1. Откройте: https://github.com/new
 
-```
-docs/
-├── index.html          # Главная страница Docsify
-├── README.md           # Домашняя страница сайта
-├── _sidebar.md         # Боковое меню
-├── _navbar.md          # Верхнее меню
-├── .nojekyll           # Отключение Jekyll
-└── docs/               # Вся документация
-    ├── API.md
-    ├── ARCHITECTURE.md
-    ├── TESTING.md
-    ├── WEBSITE.md      # Как работает сайт
-    └── libraries/
-        ├── GIN.md
-        ├── GORM.md
-        ├── JWT.md
-        └── BCRYPT_VIPER.md
-```
+2. Заполните:
+   - **Repository name:** `advanced-user-api`
+   - **Description:** `Production-ready REST API with JWT authentication, Gin framework, GORM ORM, Docker, and CI/CD`
+   - **Visibility:** Public ✅ (для портфолио)
+   
+3. **НЕ добавляйте:**
+   - ❌ README
+   - ❌ .gitignore
+   - ❌ License
+   
+   (у вас уже всё есть)
+
+4. Нажмите **"Create repository"**
+
+5. **Topics (теги):** Добавьте на странице репозитория (⚙️ рядом с About):
+   ```
+   golang, gin, gorm, jwt, docker, rest-api, postgresql, clean-architecture, ci-cd
+   ```
 
 ---
 
-## Шаг 2: Пуш на GitHub
+## 🔗 Шаг 2: Добавьте remote и запуште
 
 ```bash
 # Перейдите в директорию проекта
 cd advanced-user-api
 
-# Добавляем docs
-git add docs/
-git commit -m "feat: add GitHub Pages documentation site"
+# Добавьте remote (SSH - рекомендуется)
+git remote add origin git@github.com:AlexRodving/advanced-user-api.git
 
-# Пушим на GitHub
-git push origin main
+# Или HTTPS (если нет SSH ключа)
+git remote add origin https://github.com/AlexRodving/advanced-user-api.git
+
+# Запуште код
+git push -u origin main
 ```
+
+**Если используете HTTPS и нужна аутентификация:**
+- Используйте Personal Access Token вместо пароля
+- GitHub → Settings → Developer settings → Personal access tokens → Generate new token
 
 ---
 
-## Шаг 3: Настройка GitHub Pages
-
-### Через GitHub UI:
+## 🌐 Шаг 3: Настройте GitHub Pages
 
 1. Откройте ваш репозиторий на GitHub:
    ```
    https://github.com/AlexRodving/advanced-user-api
    ```
 
-2. Перейдите в **Settings** (вверху справа)
+2. Перейдите в **Settings** → **Pages** (в левом меню)
 
-3. В левом меню выберите **Pages**
-
-4. В разделе **Source**:
+3. В разделе **Build and deployment**:
+   - **Source**: Deploy from a branch
    - **Branch**: выберите `main`
    - **Folder**: выберите `/docs`
    - Нажмите **Save**
 
-5. Готово! Через 1-2 минуты сайт будет доступен по адресу:
+4. Готово! Через 2-3 минуты сайт будет доступен:
    ```
    https://alexrodving.github.io/advanced-user-api/
    ```
 
 ---
 
-## Шаг 4: Проверка
+## ✅ Шаг 4: Проверка
 
 Откройте в браузере:
 ```

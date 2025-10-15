@@ -36,13 +36,10 @@ type Config struct {
 	DBName string `mapstructure:"DB_NAME"`
 
 	// === REDIS SETTINGS ===
-	// Настройки для Redis (кеш, сессии)
-	
-	// RedisHost - адрес Redis сервера
-	RedisHost string `mapstructure:"REDIS_HOST"`
-	
-	// RedisPort - порт Redis (обычно 6379)
-	RedisPort string `mapstructure:"REDIS_PORT"`
+	// Redis не используется в базовой версии
+	// Раскомментируйте если добавите Redis для кеширования:
+	// RedisHost string `mapstructure:"REDIS_HOST"`
+	// RedisPort string `mapstructure:"REDIS_PORT"`
 
 	// === JWT SETTINGS ===
 	// Настройки для JSON Web Tokens (аутентификация)
