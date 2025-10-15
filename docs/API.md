@@ -451,6 +451,5 @@ openssl rand -base64 32
 
 - [Quick Start](./QUICKSTART.md) - Быстрый старт
 - [Deployment](./DEPLOY.md) - Деплой в production
-- [GitHub Setup](./GITHUB_PUSH.md) - Настройка GitHub
 - [Project Summary](./PROJECT_SUMMARY.md) - Сводка проекта
 

@@ -13,8 +13,7 @@
 - 📡 **[API Documentation](docs/API.md)** - Полное описание всех endpoints
 - ⚡ **[Quick Start](docs/QUICKSTART.md)** - Запуск за 3 команды
 - 🚀 **[Deployment Guide](docs/DEPLOY.md)** - Деплой в production (VPS, K8s, Heroku, AWS)
-- 📤 **[GitHub Setup](docs/GITHUB_PUSH.md)** - Инструкция по пушу на GitHub
-- 📊 **[Project Summary](docs/PROJECT_SUMMARY.md)** - Сводка проекта
+- 📊 **[Project Summary](docs/PROJECT_SUMMARY.md)** - Сводка проекта и статистика
 
 ---
 
