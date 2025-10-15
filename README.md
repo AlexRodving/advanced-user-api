@@ -2,7 +2,7 @@
 
 > Production-ready REST API с JWT аутентификацией, Gin фреймворком, GORM ORM, Docker и полной документацией
 
-[![Go Version](https://img.shields.io/badge/Go-1.23-00ADD8?logo=go)](https://go.dev/)
+[![Go Version](https://img.shields.io/badge/Go-1.25-00ADD8?logo=go)](https://go.dev/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-336791?logo=postgresql)](https://www.postgresql.org/)
 [![Gin](https://img.shields.io/badge/Gin-Web%20Framework-00ADD8)](https://gin-gonic.com/)
 [![GORM](https://img.shields.io/badge/GORM-ORM-00ADD8)](https://gorm.io/)

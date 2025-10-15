@@ -35,6 +35,3 @@ go.work
 # Logs
 *.log
 
-# Swagger
-docs/
-
