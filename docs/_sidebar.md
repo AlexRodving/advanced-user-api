@@ -12,6 +12,9 @@
   - [Website](docs/WEBSITE.md)
   - [GitHub Pages Setup](docs/GITHUB_PAGES_SETUP.md)
 
+- **Расширения**
+  - [Блог Платформа](docs/EXTEND_TO_BLOG.md)
+
 - **Библиотеки**
   - [Обзор](docs/libraries/README.md)
   - [Gin](docs/libraries/GIN.md)

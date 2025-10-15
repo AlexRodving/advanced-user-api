@@ -36,7 +36,8 @@
 - 🔐 **[JWT](docs/docs/libraries/JWT.md)** - Token generation and validation
 - 🔒 **[Bcrypt & Viper](docs/docs/libraries/BCRYPT_VIPER.md)** - Password hashing & configuration
 
-### Веб-сайт документации
+### Расширения и веб-сайт
+- 📝 **[Extend to Blog Platform](docs/docs/EXTEND_TO_BLOG.md)** - Как добавить посты, комментарии, роли (admin/moderator/user)
 - 🌐 **[Documentation Website Guide](docs/docs/WEBSITE.md)** - Как работает сайт документации (Docsify, CSS, GitHub Pages)
 
 ---
