@@ -154,7 +154,7 @@ https://github.com/AlexRodving/advanced-user-api
 
 Production-ready REST API с JWT аутентификацией
 
-Стек: Go, Gin, GORM, PostgreSQL, JWT, Docker, GitHub Actions
+Стек: Go 1.23, Gin, GORM, PostgreSQL, JWT, Docker, GitHub Actions
 - Clean Architecture (Handler → Service → Repository)
 - JWT tokens для безопасной авторизации
 - GORM ORM с auto migrations

@@ -6,8 +6,8 @@
 
 ```bash
 # 1. Клонируйте репозиторий
-git clone <your-repo-url>
-cd 08_advanced_api
+git clone https://github.com/AlexRodving/advanced-user-api.git
+cd advanced-user-api
 
 # 2. Запустите всё (API + PostgreSQL + Redis)
 docker-compose up -d

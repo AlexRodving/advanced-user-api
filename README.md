@@ -2,11 +2,21 @@
 
 > Production-ready REST API с JWT аутентификацией, Gin фреймворком, GORM ORM, Docker и полной документацией
 
-[![Go Version](https://img.shields.io/badge/Go-1.21-00ADD8?logo=go)](https://go.dev/)
+[![Go Version](https://img.shields.io/badge/Go-1.23-00ADD8?logo=go)](https://go.dev/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-336791?logo=postgresql)](https://www.postgresql.org/)
 [![Gin](https://img.shields.io/badge/Gin-Web%20Framework-00ADD8)](https://gin-gonic.com/)
 [![GORM](https://img.shields.io/badge/GORM-ORM-00ADD8)](https://gorm.io/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+## 📚 Документация
+
+- 📡 **[API Documentation](docs/API.md)** - Полное описание всех endpoints
+- ⚡ **[Quick Start](docs/QUICKSTART.md)** - Запуск за 3 команды
+- 🚀 **[Deployment Guide](docs/DEPLOY.md)** - Деплой в production (VPS, K8s, Heroku, AWS)
+- 📤 **[GitHub Setup](docs/GITHUB_PUSH.md)** - Инструкция по пушу на GitHub
+- 📊 **[Project Summary](docs/PROJECT_SUMMARY.md)** - Сводка проекта
+
+---
 
 ## 🎯 Что нового по сравнению с базовой версией?
 
@@ -27,7 +37,7 @@
 ## 📂 Структура проекта
 
 ```
-08_advanced_api/
+advanced-user-api/
 ├── cmd/
 │   └── api/
 │       └── main.go                  # Точка входа
@@ -70,24 +80,30 @@
 │
 ├── tests/
 │   ├── unit/
-│   │   ├── service_test.go         # Unit тесты
-│   │   └── handler_test.go
+│   │   └── auth_service_test.go    # Unit тесты с моками
 │   └── integration/
 │       └── api_test.go             # Integration тесты
 │
-├── migrations/
-│   ├── 001_create_users.sql
-│   └── 002_add_indexes.sql
+├── docs/
+│   ├── API.md                      # 📡 API документация
+│   ├── QUICKSTART.md               # ⚡ Быстрый старт
+│   ├── DEPLOY.md                   # 🚀 Гайд по деплою
+│   ├── GITHUB_PUSH.md              # 📤 Пуш на GitHub
+│   └── PROJECT_SUMMARY.md          # 📊 Сводка проекта
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml                  # GitHub Actions CI/CD
 │
 ├── docker/
-│   ├── Dockerfile                  # Dockerfile для приложения
-│   └── Dockerfile.dev              # Для разработки
+│   └── Dockerfile                  # Multi-stage Dockerfile (15MB)
 │
 ├── docker-compose.yml              # Весь стек (API + PostgreSQL + Redis)
 ├── Makefile                        # Команды для разработки
-├── .env.example
+├── env.example                     # Пример переменных окружения
 ├── .dockerignore
 ├── .gitignore
+├── LICENSE                         # MIT License
 ├── go.mod
 ├── go.sum
 └── README.md
