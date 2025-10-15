@@ -10,10 +10,12 @@
 
 ## 📚 Документация
 
-- 📡 **[API Documentation](docs/API.md)** - Полное описание всех endpoints
+- 📡 **[API Documentation](docs/API.md)** - Полное описание всех endpoints с примерами
 - ⚡ **[Quick Start](docs/QUICKSTART.md)** - Запуск за 3 команды
+- 🏗️ **[Architecture Guide](docs/ARCHITECTURE.md)** - Дизайн системы и структура кода
+- 🧪 **[Testing Guide](docs/TESTING.md)** - Unit и Integration тесты
 - 🚀 **[Deployment Guide](docs/DEPLOY.md)** - Деплой в production (VPS, K8s, Heroku, AWS)
-- 📊 **[Project Summary](docs/PROJECT_SUMMARY.md)** - Сводка проекта и статистика
+- 📊 **[Project Summary](docs/PROJECT_SUMMARY.md)** - Статистика и технический обзор
 
 ---
 
@@ -85,9 +87,10 @@ advanced-user-api/
 │
 ├── docs/
 │   ├── API.md                      # 📡 API документация
+│   ├── ARCHITECTURE.md             # 🏗️ Архитектура
+│   ├── TESTING.md                  # 🧪 Тестирование
 │   ├── QUICKSTART.md               # ⚡ Быстрый старт
 │   ├── DEPLOY.md                   # 🚀 Гайд по деплою
-│   ├── GITHUB_PUSH.md              # 📤 Пуш на GitHub
 │   └── PROJECT_SUMMARY.md          # 📊 Сводка проекта
 │
 ├── .github/
