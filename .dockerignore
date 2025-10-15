@@ -1,0 +1,30 @@
+# Git
+.git
+.gitignore
+
+# Environment
+.env
+env.example
+
+# IDE
+.vscode
+.idea
+*.swp
+
+# Documentation
+README.md
+PLAN.md
+STEP*.md
+*.md
+
+# Tests
+*_test.go
+tests/
+
+# Build artifacts
+bin/
+*.out
+
+# Logs
+*.log
+
