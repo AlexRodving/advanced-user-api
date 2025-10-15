@@ -26,6 +26,8 @@
 - 🏗️ **[Architecture Guide](docs/docs/ARCHITECTURE.md)** - Дизайн системы и структура кода
 - 🧪 **[Testing Guide](docs/docs/TESTING.md)** - Unit и Integration тесты
 - 🌿 **[Git Workflow](docs/docs/GIT_WORKFLOW.md)** - Работа с Git в команде (branches, PR, commits)
+- 🐳 **[Docker & Docker Compose](docs/docs/DOCKER.md)** - Контейнеризация (Dockerfile, multi-stage, docker-compose)
+- ⚙️ **[GitHub Actions CI/CD](docs/docs/GITHUB_ACTIONS.md)** - Автоматизация (тесты, сборка, security scan)
 - 🚀 **[Deployment Guide](docs/docs/DEPLOY.md)** - Деплой в production (VPS, K8s, Heroku, AWS)
 - 📊 **[Project Summary](docs/docs/PROJECT_SUMMARY.md)** - Статистика и технический обзор
 
