@@ -667,8 +667,8 @@ db.Where(fmt.Sprintf("email = '%s'", userInput)).Find(&user)
 
 ## См. также
 
-- [Gin Framework](./GIN.md) - HTTP web framework
+- [Gin Framework](docs/libraries/GIN.md) - HTTP web framework
 - [PostgreSQL](https://www.postgresql.org/docs/) - База данных
-- [Architecture Guide](../ARCHITECTURE.md) - Архитектура проекта
-- [Testing Guide](../TESTING.md) - Тестирование с GORM
+- [Architecture Guide](docs/ARCHITECTURE.md) - Архитектура проекта
+- [Testing Guide](docs/TESTING.md) - Тестирование с GORM
 

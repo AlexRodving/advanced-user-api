@@ -4,7 +4,7 @@
 
 ---
 
-## 🍸 [Gin Web Framework](./GIN.md)
+## 🍸 [Gin Web Framework](docs/libraries/GIN.md)
 
 **Версия:** v1.11.0
 
@@ -24,7 +24,7 @@
 
 ---
 
-## 🗄️ [GORM ORM](./GORM.md)
+## 🗄️ [GORM ORM](docs/libraries/GORM.md)
 
 **Версия:** v1.25.5
 
@@ -46,7 +46,7 @@
 
 ---
 
-## 🔐 [JWT - JSON Web Tokens](./JWT.md)
+## 🔐 [JWT - JSON Web Tokens](docs/libraries/JWT.md)
 
 **Версия:** v5.3.0
 
@@ -67,7 +67,7 @@
 
 ---
 
-## 🔒 [Bcrypt & Viper](./BCRYPT_VIPER.md)
+## 🔒 [Bcrypt & Viper](docs/libraries/BCRYPT_VIPER.md)
 
 ### Bcrypt - Password Hashing
 
@@ -108,23 +108,23 @@
 ### По задачам:
 
 **HTTP обработка:**
-- [Gin - Handlers](./GIN.md#handlers)
-- [Gin - Middleware](./GIN.md#middleware-pattern)
-- [Gin - Validation](./GIN.md#validation-tags)
+- [Gin - Handlers](docs/libraries/GIN.md#handlers)
+- [Gin - Middleware](docs/libraries/GIN.md#middleware-pattern)
+- [Gin - Validation](docs/libraries/GIN.md#validation-tags)
 
 **База данных:**
-- [GORM - CRUD](./GORM.md#crud-operations)
-- [GORM - Migration](./GORM.md#auto-migration)
-- [GORM - Модели](./GORM.md#struct-tags)
+- [GORM - CRUD](docs/libraries/GORM.md#crud-operations)
+- [GORM - Migration](docs/libraries/GORM.md#auto-migration)
+- [GORM - Модели](docs/libraries/GORM.md#struct-tags)
 
 **Безопасность:**
-- [JWT - Генерация](./JWT.md#generate---генерация-токена)
-- [JWT - Валидация](./JWT.md#validate---валидация-токена)
-- [Bcrypt - Хеширование](./BCRYPT_VIPER.md#hash---хеширование-пароля)
-- [Bcrypt - Проверка](./BCRYPT_VIPER.md#verify---проверка-пароля)
+- [JWT - Генерация](docs/libraries/JWT.md#generate---генерация-токена)
+- [JWT - Валидация](docs/libraries/JWT.md#validate---валидация-токена)
+- [Bcrypt - Хеширование](docs/libraries/BCRYPT_VIPER.md#hash---хеширование-пароля)
+- [Bcrypt - Проверка](docs/libraries/BCRYPT_VIPER.md#verify---проверка-пароля)
 
 **Конфигурация:**
-- [Viper - Load config](./BCRYPT_VIPER.md#load---загрузка-конфигурации)
+- [Viper - Load config](docs/libraries/BCRYPT_VIPER.md#load---загрузка-конфигурации)
 
 ---
 
@@ -141,7 +141,7 @@
 
 ## 📖 См. также
 
-- [Architecture Guide](../ARCHITECTURE.md) - Где используются библиотеки в архитектуре
-- [API Documentation](../API.md) - Как библиотеки работают в API
-- [Testing Guide](../TESTING.md) - Тестирование с этими библиотеками
+- [Architecture Guide](docs/ARCHITECTURE.md) - Где используются библиотеки в архитектуре
+- [API Documentation](docs/API.md) - Как библиотеки работают в API
+- [Testing Guide](docs/TESTING.md) - Тестирование с этими библиотеками
 

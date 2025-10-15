@@ -1286,9 +1286,9 @@ docker compose -f docker-compose.test.yml down -v
 
 ## 📖 См. также
 
-- [Deployment Guide](./DEPLOY.md) - Деплой с Docker
-- [GitHub Actions](./GITHUB_ACTIONS.md) - CI/CD с Docker
-- [Architecture](./ARCHITECTURE.md) - Как Docker вписывается в архитектуру
+- [Deployment Guide](docs/DEPLOY.md) - Деплой с Docker
+- [GitHub Actions](docs/GITHUB_ACTIONS.md) - CI/CD с Docker
+- [Architecture](docs/ARCHITECTURE.md) - Как Docker вписывается в архитектуру
 
 ---
 

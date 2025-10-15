@@ -491,8 +491,8 @@ userID := claims.UserID
 
 ## См. также
 
-- [Gin Framework](./GIN.md) - Получение токена из headers
-- [Bcrypt](./BCRYPT.md) - Хеширование паролей
-- [Architecture Guide](../ARCHITECTURE.md) - Auth flow
-- [API Documentation](../API.md) - Использование JWT в API
+- [Gin Framework](docs/libraries/GIN.md) - Получение токена из headers
+- [Bcrypt](docs/libraries/BCRYPT_VIPER.md) - Хеширование паролей
+- [Architecture Guide](docs/ARCHITECTURE.md) - Auth flow
+- [API Documentation](docs/API.md) - Использование JWT в API
 

@@ -585,8 +585,8 @@ protected.Use(middleware.AuthMiddleware(cfg))
 
 ## См. также
 
-- [GORM](./GORM.md) - ORM для работы с БД
-- [JWT](./JWT.md) - JWT токены
-- [Bcrypt](./BCRYPT.md) - Хеширование паролей
-- [Architecture Guide](../ARCHITECTURE.md) - Архитектура проекта
+- [GORM](docs/libraries/GORM.md) - ORM для работы с БД
+- [JWT](docs/libraries/JWT.md) - JWT токены
+- [Bcrypt](docs/libraries/BCRYPT_VIPER.md) - Хеширование паролей
+- [Architecture Guide](docs/ARCHITECTURE.md) - Архитектура проекта
 
