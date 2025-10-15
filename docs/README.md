@@ -30,8 +30,8 @@ Production-ready REST API для управления пользователям
     <div>Docker</div>
   </div>
   <div class="tech-item">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis">
-    <div>Redis</div>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+    <div>GitHub Actions</div>
   </div>
 </div>
 
