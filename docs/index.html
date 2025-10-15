@@ -54,31 +54,7 @@
       box-shadow: 0 6px 16px rgba(0, 173, 216, 0.4) !important;
     }
 
-    /* Desktop sidebar toggle button - styled like mobile */
-    .sidebar-toggle-button {
-      background: var(--theme-color) !important;
-      border: 2px solid var(--theme-color) !important;
-      border-radius: 12px !important;
-      padding: 12px 16px !important;
-      font-size: 18px !important;
-      font-weight: bold !important;
-      color: white !important;
-      transition: all 0.3s !important;
-      box-shadow: 0 4px 12px rgba(0, 173, 216, 0.3) !important;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.2) !important;
-      min-width: auto !important;
-      width: auto !important;
-      max-width: 60px !important;
-    }
-
-    .sidebar-toggle-button:hover {
-      background: var(--theme-color-dark) !important;
-      border-color: var(--theme-color-dark) !important;
-      transform: scale(1.05) !important;
-      box-shadow: 0 6px 16px rgba(0, 173, 216, 0.4) !important;
-    }
-
-    .sidebar-toggle-button:active {
+    .sidebar-toggle:active {
       transform: scale(0.95) !important;
     }
 
@@ -122,7 +98,7 @@
     .mobile-menu-toggle {
       display: none;
       position: fixed;
-      top: 0;
+      bottom: 0;
       left: 0;
       z-index: 1000;
       background: var(--theme-color);
@@ -438,7 +414,7 @@
       .mobile-menu-toggle {
         display: block !important;
         /* Pinned to bottom left corner */
-        top: 0;
+        bottom: 0;
         left: 0;
       }
 
@@ -629,7 +605,6 @@
       .mobile-menu-toggle {
         bottom: 0;
         left: 0;
-        top: 0;
         padding: 8px 12px;
         font-size: 16px;
         box-shadow: 0 3px 10px rgba(0, 173, 216, 0.4);
