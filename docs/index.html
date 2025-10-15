@@ -33,10 +33,19 @@
     /* Remove position absolute from app-nav */
     .app-nav {
       position: relative !important;
+      z-index: 0 !important;
+    }
+
+    /* Remove z-index from navbar */
+    .navbar {
+      z-index: 0 !important;
     }
 
     /* Style sidebar-toggle on desktop like mobile button */
-    .sidebar-toggle {
+    .sidebar-toggle,
+    button.sidebar-toggle,
+    .sidebar-toggle-button,
+    button.sidebar-toggle-button {
       background: var(--theme-color) !important;
       border: 2px solid var(--theme-color) !important;
       border-radius: 12px !important;
@@ -50,16 +59,23 @@
       min-width: auto !important;
       width: auto !important;
       max-width: 60px !important;
+      outline: none !important;
     }
 
-    .sidebar-toggle:hover {
+    .sidebar-toggle:hover,
+    button.sidebar-toggle:hover,
+    .sidebar-toggle-button:hover,
+    button.sidebar-toggle-button:hover {
       background: var(--theme-color-dark) !important;
       border-color: var(--theme-color-dark) !important;
       transform: scale(1.05) !important;
       box-shadow: 0 6px 16px rgba(0, 173, 216, 0.4) !important;
     }
 
-    .sidebar-toggle:active {
+    .sidebar-toggle:active,
+    button.sidebar-toggle:active,
+    .sidebar-toggle-button:active,
+    button.sidebar-toggle-button:active {
       transform: scale(0.95) !important;
     }
 
