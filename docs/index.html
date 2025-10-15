@@ -30,6 +30,42 @@
       --card-bg: #2d2d2d;
     }
 
+    /* Desktop menu button - styled like mobile */
+    .desktop-menu-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: var(--theme-color);
+      border: 2px solid var(--theme-color);
+      border-radius: 12px;
+      padding: 12px 16px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      transition: all 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 173, 216, 0.3);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+      min-width: auto;
+      width: auto;
+      max-width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .desktop-menu-toggle:hover {
+      background: var(--theme-color-dark);
+      border-color: var(--theme-color-dark);
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0, 173, 216, 0.4);
+    }
+
+    .desktop-menu-toggle:active {
+      transform: scale(0.95);
+    }
+
     /* Theme toggle button - styled like mobile menu button */
     .theme-toggle {
       position: fixed;
@@ -87,6 +123,13 @@
       min-width: auto;
       width: auto;
       max-width: 60px;
+    }
+
+    /* Hide mobile menu button on desktop */
+    @media (min-width: 769px) {
+      .mobile-menu-toggle {
+        display: none !important;
+      }
     }
 
     .mobile-menu-toggle:hover {
@@ -319,6 +362,30 @@
       color: #ffffff !important;
     }
 
+    /* Dark theme content headings and text */
+    [data-theme="dark"] h1,
+    [data-theme="dark"] h2,
+    [data-theme="dark"] h3,
+    [data-theme="dark"] h4,
+    [data-theme="dark"] h5,
+    [data-theme="dark"] h6 {
+      color: #ffffff !important;
+    }
+
+    [data-theme="dark"] strong,
+    [data-theme="dark"] b {
+      color: #ffffff !important;
+    }
+
+    [data-theme="dark"] .markdown-section h1,
+    [data-theme="dark"] .markdown-section h2,
+    [data-theme="dark"] .markdown-section h3,
+    [data-theme="dark"] .markdown-section h4,
+    [data-theme="dark"] .markdown-section h5,
+    [data-theme="dark"] .markdown-section h6 {
+      color: #ffffff !important;
+    }
+
     /* Dark theme search */
     [data-theme="dark"] .search input {
       background: #3d3d3d !important;
@@ -350,14 +417,22 @@
       color: #ffffff;
     }
 
+    /* Hide desktop menu button on mobile */
+    @media (max-width: 768px) {
+      .desktop-menu-toggle {
+        display: none !important;
+      }
+    }
+
     /* Mobile responsive */
     @media (max-width: 768px) {
       .mobile-menu-toggle {
         display: block;
-        /* Move to bottom left */
-        top: auto;
-        bottom: 20px;
-        left: 20px;
+        /* Move to top right corner like GitHub icon */
+        top: 20px;
+        right: 20px;
+        bottom: auto;
+        left: auto;
       }
 
       /* Hide navbar completely on mobile */
@@ -404,13 +479,29 @@
         display: block !important;
       }
 
-      /* Theme toggle stays in bottom right on mobile */
+      /* Theme toggle in top left corner on mobile */
       .theme-toggle {
-        bottom: 20px;
-        right: 20px;
+        top: 20px;
+        left: 20px;
+        bottom: auto;
+        right: auto;
         width: 40px;
         height: 40px;
         font-size: 16px;
+      }
+
+      /* Fix content shift on mobile */
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      .content {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
       }
 
       .hero {
@@ -543,6 +634,11 @@
   </style>
 </head>
 <body>
+  <!-- Desktop menu toggle -->
+  <button class="desktop-menu-toggle" onclick="toggleDesktopMenu()" title="Меню">
+    ☰
+  </button>
+
   <!-- Mobile menu toggle -->
   <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" title="Меню">
     ☰
@@ -575,6 +671,23 @@
     function updateThemeIcon(theme) {
       const icon = document.querySelector('.theme-toggle');
       icon.textContent = theme === 'light' ? '🌙' : '☀️';
+    }
+
+    // Desktop menu management
+    function toggleDesktopMenu() {
+      const sidebar = document.querySelector('.sidebar');
+      const body = document.body;
+      
+      if (sidebar) {
+        sidebar.classList.toggle('open');
+        
+        // Prevent body scroll when menu is open
+        if (sidebar.classList.contains('open')) {
+          body.classList.add('menu-open');
+        } else {
+          body.classList.remove('menu-open');
+        }
+      }
     }
 
     // Mobile menu management
