@@ -9,6 +9,7 @@
   - [Git Workflow](docs/GIT_WORKFLOW.md)
   - [Docker & Docker Compose](docs/DOCKER.md)
   - [GitHub Actions CI/CD](docs/GITHUB_ACTIONS.md)
+  - [Redis & Monitoring](docs/REDIS_MONITORING.md)
   - [Deployment](docs/DEPLOY.md)
   - [Summary](docs/PROJECT_SUMMARY.md)
   - [Website](docs/WEBSITE.md)
