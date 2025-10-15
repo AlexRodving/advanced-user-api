@@ -365,6 +365,11 @@
         display: none !important;
       }
 
+      /* Hide app-nav on mobile */
+      .app-nav {
+        display: none !important;
+      }
+
       /* Hide top navigation on mobile */
       .navbar-nav {
         display: none !important;
@@ -380,6 +385,23 @@
       /* Ensure no top bar interference */
       .navbar-expand-md .navbar-nav {
         display: none !important;
+      }
+
+      /* Hide sidebar-toggle on mobile (keep only mobile-menu-toggle) */
+      .sidebar-toggle {
+        display: none !important;
+      }
+
+      /* Hide any other navigation toggles */
+      .app-nav-toggle,
+      .nav-toggle,
+      .menu-toggle:not(.mobile-menu-toggle) {
+        display: none !important;
+      }
+
+      /* Ensure only our custom mobile-menu-toggle is visible */
+      .mobile-menu-toggle {
+        display: block !important;
       }
 
       /* Theme toggle stays in bottom right on mobile */
