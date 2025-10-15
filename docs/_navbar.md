@@ -5,4 +5,5 @@
 - [⚡ Quick Start](docs/QUICKSTART.md)
 - [🔴 Redis & Monitoring](docs/REDIS_MONITORING.md)
 - [GitHub](https://github.com/AlexRodving/advanced-user-api)
+- [💬 Telegram](https://t.me/Rodving)
 

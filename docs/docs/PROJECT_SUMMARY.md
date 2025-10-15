@@ -4,7 +4,8 @@
 
 **Advanced User Management API** - готовый к продакшену REST API с JWT аутентификацией, построенный на современных технологиях Go с использованием лучших практик.
 
-**Репозиторий:** [github.com/AlexRodving/advanced-user-api](https://github.com/AlexRodving/advanced-user-api)
+**Репозиторий:** [github.com/AlexRodving/advanced-user-api](https://github.com/AlexRodving/advanced-user-api)  
+**Контакты:** [@Rodving в Telegram](https://t.me/Rodving)
 
 ---
 

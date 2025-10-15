@@ -7,6 +7,7 @@
 [![Gin](https://img.shields.io/badge/Gin-Web%20Framework-00ADD8)](https://gin-gonic.com/)
 [![GORM](https://img.shields.io/badge/GORM-ORM-00ADD8)](https://gorm.io/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Telegram](https://img.shields.io/badge/Telegram-@Rodving-00ADD8?logo=telegram)](https://t.me/Rodving)
 
 ---
 
