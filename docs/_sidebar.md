@@ -10,6 +10,7 @@
   - [Deployment](docs/DEPLOY.md)
   - [Summary](docs/PROJECT_SUMMARY.md)
   - [Website](docs/WEBSITE.md)
+  - [GitHub Pages Setup](docs/GITHUB_PAGES_SETUP.md)
 
 - **Библиотеки**
   - [Обзор](docs/libraries/README.md)

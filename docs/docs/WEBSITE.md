@@ -703,34 +703,13 @@ https://cdn.simpleicons.org/{name}/{color}
 
 ## 🚀 GitHub Pages Setup
 
-### Шаг 1: Push на GitHub
+**Полная инструкция:** [GitHub Pages Setup Guide](./GITHUB_PAGES_SETUP.md)
 
-```bash
-git add docs/
-git commit -m "feat: add documentation website"
-git push origin main
-```
+**Кратко:**
 
-### Шаг 2: Настройка Pages
-
-1. GitHub → Repository → **Settings**
-2. Левое меню → **Pages**
-3. **Source:**
-   - Branch: `main`
-   - Folder: `/docs` ✅
-4. **Save**
-
-### Шаг 3: Проверка
-
-Через 1-2 минуты сайт доступен:
-```
-https://{username}.github.io/{repo-name}/
-```
-
-Для этого проекта:
-```
-https://alexrodving.github.io/advanced-user-api/
-```
+1. Push на GitHub
+2. Settings → Pages → Source: main, /docs
+3. Сайт доступен: `https://alexrodving.github.io/advanced-user-api/`
 
 ---
 
